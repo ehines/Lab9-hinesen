@@ -17,3 +17,9 @@ Scenario: Prompt the user for Life
 	And I type "Liz"
 	When I type "1"
 	Then the output should contain "I don't want to play that game. Bye."
+	
+Scenario: Prompt the user for Monopoly
+	Given the application is running
+	And I type "Liz"
+	When I type "2"
+	Then the output should contain "I don't want to play that game. Bye."

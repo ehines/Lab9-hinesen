@@ -23,3 +23,21 @@ Scenario: Prompt the user for Monopoly
 	And I type "Liz"
 	When I type "2"
 	Then the output should contain "I don't want to play that game. Bye."
+	
+Scenario: Prompt the user for Global Thermonuclear War
+	Given the application is running
+	And I type "Liz"
+	When I type "3"
+	Then the output should contain "BOOM!"
+	
+Scenario: Prompt the user for Sorry
+	Given the application is running
+	And I type "Liz"
+	When I type "4"
+	Then the output should contain "I don't want to play that game. Bye."
+	
+Scenario: Prompt the user for Lego Batman
+	Given the application is running
+	And I type "Liz"
+	When I type "5"
+	Then the output should contain "I don't want to play that game. Bye."

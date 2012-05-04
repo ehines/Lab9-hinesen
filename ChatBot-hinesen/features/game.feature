@@ -6,6 +6,7 @@ Feature: Prompt a user for a game
 Scenario: Verify the prompt shows up
 	Given the application is running
 	And I type "Liz"
+	And I type "1"
 	Then the output should contain "(1) Life"
 	Then the output should contain "(2) Monopoly"
 	Then the output should contain "(3) Global Thermonuclear War"
